@@ -176,9 +176,10 @@ class TemplateVC: UIViewController {
         lblMessage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
         lblMessage.topAnchor.constraint(equalTo: activityIndicator.bottomAnchor, constant: heightFromPct(percent: 2)),
-        lblMessage.centerXAnchor.constraint(equalTo: spinnerView!.centerXAnchor),
+        lblMessage.leadingAnchor.constraint(equalTo: spinnerView!.leadingAnchor,constant: widthFromPct(percent: 5)),
+        lblMessage.trailingAnchor.constraint(equalTo: spinnerView!.trailingAnchor,constant: widthFromPct(percent: -5)),
         ])
-        // Timer to show the label after 3 seconds
+//      Timer to show the label after 3 seconds
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
 //            self.messageLabel.isHidden = false
 //        }

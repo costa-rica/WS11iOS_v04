@@ -118,7 +118,7 @@ extension ManageAppleHealthVC{
                 self.arrySleepDict = arrySleepDict
                 let formatted_arrySleepDictCount = formatWithCommas(number: arrySleepDict.count)
                 if let unwp_message = self.lblMessage.text {
-                    self.lblMessage.text = unwp_message + "\n \(formatted_arrySleepDictCount) Sleep records"
+                    self.lblMessage.text = unwp_message + "," + "\n \(formatted_arrySleepDictCount) Sleep records"
                 }
 //                if arrySleepDict.count == 0 {
 //                    self.templateAlert(alertMessage: "There are no SLEEP data in your Apple Health Data.")
@@ -140,7 +140,7 @@ extension ManageAppleHealthVC{
                 self.arryHeartRateDict = arryHeartRateDict
                 let formatted_arryHeartRateDictCount = formatWithCommas(number: arryHeartRateDict.count)
                 if let unwp_message = self.lblMessage.text {
-                    self.lblMessage.text = unwp_message + "\n \(formatted_arryHeartRateDictCount) Heart Rate records"
+                    self.lblMessage.text = unwp_message + "," + "\n \(formatted_arryHeartRateDictCount) Heart Rate records"
                 }
             case let .failure(error):
                 print("There was an error getting heart rate: \(error)")
@@ -158,7 +158,7 @@ extension ManageAppleHealthVC{
                 let formatted_arryExerciseTimeDictCount = formatWithCommas(number: arryExerciseTimeDict.count)
 //                self.spinnerScreenLblMessage(message: "Retrieved \(formatted_arryExerciseTimeDictCount) Exercise Time records")
                 if let unwp_message = self.lblMessage.text {
-                    self.lblMessage.text = unwp_message + "\n \(formatted_arryExerciseTimeDictCount) Exerciese records"
+                    self.lblMessage.text = unwp_message + "," + "\n \(formatted_arryExerciseTimeDictCount) Exerciese records"
                 }
             case let .failure(error):
                 print("There was an error getting heart rate: \(error)")
@@ -176,7 +176,7 @@ extension ManageAppleHealthVC{
                 let formatted_arryWorkoutDictCount = formatWithCommas(number: arryWorkoutDict.count)
 //                self.spinnerScreenLblMessage(message: "Retrieved \(formatted_arryWorkoutDictCount) Workout records")
                 if let unwp_message = self.lblMessage.text {
-                    self.lblMessage.text = unwp_message + "\n \(formatted_arryWorkoutDictCount) Workout records"
+                    self.lblMessage.text = unwp_message + "," + "\n \(formatted_arryWorkoutDictCount) Workout records"
                 }
             case let .failure(error):
                 print("There was an error getting heart rate: \(error)")
@@ -194,12 +194,16 @@ extension ManageAppleHealthVC{
         guard let user_id = userStore.user.id else {
             self.templateAlert(alertMessage: "No user id. check ManageAppleHealthVC sendAppleHealthData.")
             return}
-        if arryWorkoutDict.count > 0 {
-            
+        let all_data_count = arrySleepDict.count + arryStepsDict.count + arryHeartRateDict.count + arryExerciseTimeDict.count + arryWorkoutDict.count
+        if all_data_count > 0 {
             self.removeLblMessage()
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.spinnerScreenLblMessage(message: "Sending Apple Health records What Sticks API")
+                let formatted_all_data_count = formatWithCommas(number: all_data_count)
+                self.spinnerScreenLblMessage(message: "Sending Apple Health \(formatted_all_data_count) records to \nWhat Sticks API")
             }
+        }
+        if arryWorkoutDict.count > 0 {
             self.healthDataStore.callReceiveAppleWorkoutsData(userId: user_id,dateStringTimeStamp:dateStringTimeStamp, arryAppleWorkouts: arryWorkoutDict) { resultResponse in
                 switch resultResponse{
                 case .success(_):
@@ -221,9 +225,9 @@ extension ManageAppleHealthVC{
         guard let user_id = userStore.user.id else {
             self.templateAlert(alertMessage: "No user id. check ManageAppleHealthVC sendAppleHealthData.")
             return}
-        let all_data_count = arrySleepDict.count + arryStepsDict.count + arryHeartRateDict.count
+        let all_data_count = arrySleepDict.count + arryStepsDict.count + arryHeartRateDict.count + arryExerciseTimeDict.count
         if all_data_count > 0{
-            let arryAppleHealthData = arrySleepDict + arryStepsDict + arryHeartRateDict
+            let arryAppleHealthData = arrySleepDict + arryStepsDict + arryHeartRateDict + arryExerciseTimeDict
 
             /* Send apple works outs first */
             self.healthDataStore.sendChunksToWSAPI(userId:user_id,dateStringTimeStamp:dateStringTimeStamp ,arryAppleHealthData: arryAppleHealthData) { responseResult in
