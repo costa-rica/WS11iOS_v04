@@ -7,23 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0139B7CB2B55AC5900398B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7CA2B55AC5900398B88 /* AppDelegate.swift */; };
-		0139B7CD2B55AC5900398B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7CC2B55AC5900398B88 /* SceneDelegate.swift */; };
-		0139B7CF2B55AC5900398B88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7CE2B55AC5900398B88 /* ViewController.swift */; };
-		0139B7D22B55AC5900398B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7D02B55AC5900398B88 /* Main.storyboard */; };
-		0139B7D42B55AC5B00398B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7D32B55AC5B00398B88 /* Assets.xcassets */; };
-		0139B7D72B55AC5B00398B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7D52B55AC5B00398B88 /* LaunchScreen.storyboard */; };
+		0139B8002B55ACEE00398B88 /* wsLaunchVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7DF2B55ACEE00398B88 /* wsLaunchVideo.mp4 */; };
+		0139B8012B55ACEE00398B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7E02B55ACEE00398B88 /* Assets.xcassets */; };
+		0139B8022B55ACEE00398B88 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E22B55ACEE00398B88 /* UserStore.swift */; };
+		0139B8032B55ACEE00398B88 /* UrlStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E32B55ACEE00398B88 /* UrlStore.swift */; };
+		0139B8042B55ACEE00398B88 /* HealthDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E42B55ACEE00398B88 /* HealthDataStore.swift */; };
+		0139B8052B55ACEE00398B88 /* RequestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E52B55ACEE00398B88 /* RequestStore.swift */; };
+		0139B8062B55ACEE00398B88 /* DashboardHealthDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E72B55ACEE00398B88 /* DashboardHealthDataObject.swift */; };
+		0139B8072B55ACEE00398B88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7E82B55ACEE00398B88 /* User.swift */; };
+		0139B8082B55ACEE00398B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7E92B55ACEE00398B88 /* LaunchScreen.storyboard */; };
+		0139B8092B55ACEE00398B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7EB2B55ACEE00398B88 /* Main.storyboard */; };
+		0139B80A2B55ACEE00398B88 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7EE2B55ACEE00398B88 /* LocationFetcher.swift */; };
+		0139B80B2B55ACEE00398B88 /* MiscUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7EF2B55ACEE00398B88 /* MiscUtils.swift */; };
+		0139B80C2B55ACEE00398B88 /* AppleHealthDataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F02B55ACEE00398B88 /* AppleHealthDataUtils.swift */; };
+		0139B80D2B55ACEE00398B88 /* timezones.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0139B7F12B55ACEE00398B88 /* timezones.txt */; };
+		0139B80E2B55ACEE00398B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F32B55ACEE00398B88 /* AppDelegate.swift */; };
+		0139B80F2B55ACEE00398B88 /* ManageDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F52B55ACEE00398B88 /* ManageDataVC.swift */; };
+		0139B8102B55ACEE00398B88 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F62B55ACEE00398B88 /* RegisterVC.swift */; };
+		0139B8112B55ACEE00398B88 /* LaunchVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F72B55ACEE00398B88 /* LaunchVideoVC.swift */; };
+		0139B8122B55ACEE00398B88 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F82B55ACEE00398B88 /* LoginVC.swift */; };
+		0139B8132B55ACEE00398B88 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7F92B55ACEE00398B88 /* TemplateVC.swift */; };
+		0139B8142B55ACEE00398B88 /* ManageUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7FA2B55ACEE00398B88 /* ManageUserVC.swift */; };
+		0139B8152B55ACEE00398B88 /* SelectDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7FB2B55ACEE00398B88 /* SelectDashboardVC.swift */; };
+		0139B8162B55ACEE00398B88 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7FC2B55ACEE00398B88 /* DashboardVC.swift */; };
+		0139B8172B55ACEE00398B88 /* ManageAppleHealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7FD2B55ACEE00398B88 /* ManageAppleHealthVC.swift */; };
+		0139B8192B55ACEE00398B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B7FF2B55ACEE00398B88 /* SceneDelegate.swift */; };
+		84E2F329CB5C4D47924B71A1 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = A175B38347A44C979AE37DAE /* Sentry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0139B7C72B55AC5900398B88 /* WS11iOS_v04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WS11iOS_v04.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0139B7CA2B55AC5900398B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0139B7CC2B55AC5900398B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0139B7CE2B55AC5900398B88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0139B7D12B55AC5900398B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0139B7D32B55AC5B00398B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0139B7D62B55AC5B00398B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0139B7D82B55AC5B00398B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0139B7DF2B55ACEE00398B88 /* wsLaunchVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wsLaunchVideo.mp4; sourceTree = "<group>"; };
+		0139B7E02B55ACEE00398B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0139B7E22B55ACEE00398B88 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		0139B7E32B55ACEE00398B88 /* UrlStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlStore.swift; sourceTree = "<group>"; };
+		0139B7E42B55ACEE00398B88 /* HealthDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataStore.swift; sourceTree = "<group>"; };
+		0139B7E52B55ACEE00398B88 /* RequestStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestStore.swift; sourceTree = "<group>"; };
+		0139B7E72B55ACEE00398B88 /* DashboardHealthDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardHealthDataObject.swift; sourceTree = "<group>"; };
+		0139B7E82B55ACEE00398B88 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0139B7EA2B55ACEE00398B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0139B7EC2B55ACEE00398B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0139B7EE2B55ACEE00398B88 /* LocationFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		0139B7EF2B55ACEE00398B88 /* MiscUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscUtils.swift; sourceTree = "<group>"; };
+		0139B7F02B55ACEE00398B88 /* AppleHealthDataUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleHealthDataUtils.swift; sourceTree = "<group>"; };
+		0139B7F12B55ACEE00398B88 /* timezones.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timezones.txt; sourceTree = "<group>"; };
+		0139B7F22B55ACEE00398B88 /* WhatSticks11iOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WhatSticks11iOS.entitlements; sourceTree = "<group>"; };
+		0139B7F32B55ACEE00398B88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0139B7F52B55ACEE00398B88 /* ManageDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageDataVC.swift; sourceTree = "<group>"; };
+		0139B7F62B55ACEE00398B88 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		0139B7F72B55ACEE00398B88 /* LaunchVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVideoVC.swift; sourceTree = "<group>"; };
+		0139B7F82B55ACEE00398B88 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0139B7F92B55ACEE00398B88 /* TemplateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
+		0139B7FA2B55ACEE00398B88 /* ManageUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageUserVC.swift; sourceTree = "<group>"; };
+		0139B7FB2B55ACEE00398B88 /* SelectDashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDashboardVC.swift; sourceTree = "<group>"; };
+		0139B7FC2B55ACEE00398B88 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		0139B7FD2B55ACEE00398B88 /* ManageAppleHealthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAppleHealthVC.swift; sourceTree = "<group>"; };
+		0139B7FE2B55ACEE00398B88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0139B7FF2B55ACEE00398B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0139B81A2B55AD7900398B88 /* WS11iOS_v04.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WS11iOS_v04.entitlements; path = WS11iOS_v04/WS11iOS_v04.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E2F329CB5C4D47924B71A1 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +82,8 @@
 		0139B7BE2B55AC5900398B88 = {
 			isa = PBXGroup;
 			children = (
-				0139B7C92B55AC5900398B88 /* WS11iOS_v04 */,
+				0139B81A2B55AD7900398B88 /* WS11iOS_v04.entitlements */,
+				0139B7DE2B55ACEE00398B88 /* WhatSticks11iOS */,
 				0139B7C82B55AC5900398B88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +96,70 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0139B7C92B55AC5900398B88 /* WS11iOS_v04 */ = {
+		0139B7DE2B55ACEE00398B88 /* WhatSticks11iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0139B7CA2B55AC5900398B88 /* AppDelegate.swift */,
-				0139B7CC2B55AC5900398B88 /* SceneDelegate.swift */,
-				0139B7CE2B55AC5900398B88 /* ViewController.swift */,
-				0139B7D02B55AC5900398B88 /* Main.storyboard */,
-				0139B7D32B55AC5B00398B88 /* Assets.xcassets */,
-				0139B7D52B55AC5B00398B88 /* LaunchScreen.storyboard */,
-				0139B7D82B55AC5B00398B88 /* Info.plist */,
+				0139B7DF2B55ACEE00398B88 /* wsLaunchVideo.mp4 */,
+				0139B7E02B55ACEE00398B88 /* Assets.xcassets */,
+				0139B7E12B55ACEE00398B88 /* Stores */,
+				0139B7E62B55ACEE00398B88 /* Models */,
+				0139B7E92B55ACEE00398B88 /* LaunchScreen.storyboard */,
+				0139B7EB2B55ACEE00398B88 /* Main.storyboard */,
+				0139B7ED2B55ACEE00398B88 /* Utilities */,
+				0139B7F22B55ACEE00398B88 /* WhatSticks11iOS.entitlements */,
+				0139B7F32B55ACEE00398B88 /* AppDelegate.swift */,
+				0139B7F42B55ACEE00398B88 /* Views */,
+				0139B7FE2B55ACEE00398B88 /* Info.plist */,
+				0139B7FF2B55ACEE00398B88 /* SceneDelegate.swift */,
 			);
-			path = WS11iOS_v04;
+			path = WhatSticks11iOS;
+			sourceTree = "<group>";
+		};
+		0139B7E12B55ACEE00398B88 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				0139B7E22B55ACEE00398B88 /* UserStore.swift */,
+				0139B7E32B55ACEE00398B88 /* UrlStore.swift */,
+				0139B7E42B55ACEE00398B88 /* HealthDataStore.swift */,
+				0139B7E52B55ACEE00398B88 /* RequestStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		0139B7E62B55ACEE00398B88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0139B7E72B55ACEE00398B88 /* DashboardHealthDataObject.swift */,
+				0139B7E82B55ACEE00398B88 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0139B7ED2B55ACEE00398B88 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0139B7EE2B55ACEE00398B88 /* LocationFetcher.swift */,
+				0139B7EF2B55ACEE00398B88 /* MiscUtils.swift */,
+				0139B7F02B55ACEE00398B88 /* AppleHealthDataUtils.swift */,
+				0139B7F12B55ACEE00398B88 /* timezones.txt */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0139B7F42B55ACEE00398B88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0139B7F52B55ACEE00398B88 /* ManageDataVC.swift */,
+				0139B7F62B55ACEE00398B88 /* RegisterVC.swift */,
+				0139B7F72B55ACEE00398B88 /* LaunchVideoVC.swift */,
+				0139B7F82B55ACEE00398B88 /* LoginVC.swift */,
+				0139B7F92B55ACEE00398B88 /* TemplateVC.swift */,
+				0139B7FA2B55ACEE00398B88 /* ManageUserVC.swift */,
+				0139B7FB2B55ACEE00398B88 /* SelectDashboardVC.swift */,
+				0139B7FC2B55ACEE00398B88 /* DashboardVC.swift */,
+				0139B7FD2B55ACEE00398B88 /* ManageAppleHealthVC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +172,16 @@
 				0139B7C32B55AC5900398B88 /* Sources */,
 				0139B7C42B55AC5900398B88 /* Frameworks */,
 				0139B7C52B55AC5900398B88 /* Resources */,
+				9DDB268AB7A5489486960A9E /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WS11iOS_v04;
+			packageProductDependencies = (
+				A175B38347A44C979AE37DAE /* Sentry */,
+			);
 			productName = WS11iOS_v04;
 			productReference = 0139B7C72B55AC5900398B88 /* WS11iOS_v04.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 0139B7BE2B55AC5900398B88;
+			packageReferences = (
+				38E633592490449CBE10F01F /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			productRefGroup = 0139B7C82B55AC5900398B88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,42 +227,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0139B7D72B55AC5B00398B88 /* LaunchScreen.storyboard in Resources */,
-				0139B7D42B55AC5B00398B88 /* Assets.xcassets in Resources */,
-				0139B7D22B55AC5900398B88 /* Main.storyboard in Resources */,
+				0139B8082B55ACEE00398B88 /* LaunchScreen.storyboard in Resources */,
+				0139B80D2B55ACEE00398B88 /* timezones.txt in Resources */,
+				0139B8012B55ACEE00398B88 /* Assets.xcassets in Resources */,
+				0139B8002B55ACEE00398B88 /* wsLaunchVideo.mp4 in Resources */,
+				0139B8092B55ACEE00398B88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DDB268AB7A5489486960A9E /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=nick-rodriguez-911def83e\nexport SENTRY_PROJECT=ws11ios_v04\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0139B7C32B55AC5900398B88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0139B7CF2B55AC5900398B88 /* ViewController.swift in Sources */,
-				0139B7CB2B55AC5900398B88 /* AppDelegate.swift in Sources */,
-				0139B7CD2B55AC5900398B88 /* SceneDelegate.swift in Sources */,
+				0139B80C2B55ACEE00398B88 /* AppleHealthDataUtils.swift in Sources */,
+				0139B8112B55ACEE00398B88 /* LaunchVideoVC.swift in Sources */,
+				0139B8122B55ACEE00398B88 /* LoginVC.swift in Sources */,
+				0139B8042B55ACEE00398B88 /* HealthDataStore.swift in Sources */,
+				0139B80F2B55ACEE00398B88 /* ManageDataVC.swift in Sources */,
+				0139B8172B55ACEE00398B88 /* ManageAppleHealthVC.swift in Sources */,
+				0139B8022B55ACEE00398B88 /* UserStore.swift in Sources */,
+				0139B8072B55ACEE00398B88 /* User.swift in Sources */,
+				0139B8132B55ACEE00398B88 /* TemplateVC.swift in Sources */,
+				0139B80A2B55ACEE00398B88 /* LocationFetcher.swift in Sources */,
+				0139B8062B55ACEE00398B88 /* DashboardHealthDataObject.swift in Sources */,
+				0139B8032B55ACEE00398B88 /* UrlStore.swift in Sources */,
+				0139B8052B55ACEE00398B88 /* RequestStore.swift in Sources */,
+				0139B8102B55ACEE00398B88 /* RegisterVC.swift in Sources */,
+				0139B8162B55ACEE00398B88 /* DashboardVC.swift in Sources */,
+				0139B8192B55ACEE00398B88 /* SceneDelegate.swift in Sources */,
+				0139B80E2B55ACEE00398B88 /* AppDelegate.swift in Sources */,
+				0139B8142B55ACEE00398B88 /* ManageUserVC.swift in Sources */,
+				0139B8152B55ACEE00398B88 /* SelectDashboardVC.swift in Sources */,
+				0139B80B2B55ACEE00398B88 /* MiscUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0139B7D02B55AC5900398B88 /* Main.storyboard */ = {
+		0139B7E92B55ACEE00398B88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0139B7D12B55AC5900398B88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0139B7D52B55AC5B00398B88 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0139B7D62B55AC5B00398B88 /* Base */,
+				0139B7EA2B55ACEE00398B88 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0139B7EB2B55ACEE00398B88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0139B7EC2B55ACEE00398B88 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -218,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -290,16 +429,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WS11iOS_v04/WS11iOS_v04.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL5QL25H5M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WS11iOS_v04/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "What Sticks 11";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow What Sticks to collect Health Data for analysis.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow What Sticks to collect Health Data for analysis.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,16 +464,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WS11iOS_v04/WS11iOS_v04.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL5QL25H5M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WS11iOS_v04/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "What Sticks 11";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow What Sticks to collect Health Data for analysis.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow What Sticks to collect Health Data for analysis.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38E633592490449CBE10F01F /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A175B38347A44C979AE37DAE /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38E633592490449CBE10F01F /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0139B7BF2B55AC5900398B88 /* Project object */;
 }
