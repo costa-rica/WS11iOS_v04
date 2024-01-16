@@ -32,18 +32,7 @@ class DashboardVC: TemplateVC, SelectDashboardVCDelegate{
     }
     override func viewWillAppear(_ animated: Bool) {
         checkDashboardTableObject()
-        //        if self.userStore.boolDashObjExists{
-        //            self.dashboardTableObjectExists()
-        //            self.lblDashboardTitle.text = self.userStore.currentDashboardObject!.dependentVarName
-        //        } else {
-        //            self.setup_btnRefreshDashboard()
-        //            if let _ = self.tblDashboard{
-        //                self.tblDashboard.removeFromSuperview()
-        //                self.lblDashboardTitle.removeFromSuperview()
-        //                self.btnDashboardTitleInfo.removeFromSuperview()
-        //            }
-        //            print("No arryDashboardTableObjects.json file found")
-        //        }
+
     }
     
     //    func dashboardTableObjectExists(){
